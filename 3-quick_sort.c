@@ -13,7 +13,7 @@ int Lomuto_partition(int *array, int low, int high, size_t size)
 	int i, j, temp, pivot;
 
 	pivot = array[high];
-	i = low - 1;
+	i = low - 1; /*indicates that initially, no elem 2 the left*/
 
 	for (j = low; j < high; j++)
 	{
@@ -38,6 +38,10 @@ int Lomuto_partition(int *array, int low, int high, size_t size)
 		print_array(array, size);
 	}
 	return (i + 1);
+	/**
+	 * The array[high] < array[i + 1]), check if the pivot element is
+	 * smaller than elem at pos i + 1 (current j)
+	 */
 }
 
 /**
