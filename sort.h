@@ -25,7 +25,11 @@ void bubble_sort(int *array, size_t size);
 int listlen(listint_t *h);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
+int Lomuto_partition(int *array, int low, int high, size_t size);
+void quick_recursion(int *array, int low, int high, size_t size);  
 void quick_sort(int *array, size_t size);
+
+/*Advanced prototypes, to be worked on later*/
 void shell_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
 void counting_sort(int *array, size_t size);
