@@ -6,7 +6,7 @@
  * @low: lowest index of the array
  * @high: highest index of the array
  * @size: size of the array
- * Return: nothing
+ * Return: nothing!
  */
 int Lomuto_partition(int *array, int low, int high, size_t size)
 {
